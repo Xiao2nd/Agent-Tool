@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+langchain
+langgraph
+ollama
+chromadb-client
+sentence-transformers
+langchain_community
+python-dotenv
