@@ -18,4 +18,6 @@ if __name__ == "__main__":
     else:
         load_dotenv("setting/.env.dev")
 
+    load_dotenv("setting/.env.ollama")
+
     uvicorn.run("main:app", host="0.0.0.0" , port=int(os.getenv("PORT")) , reload=bool(os.getenv("RELOAD")) )

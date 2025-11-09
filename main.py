@@ -19,3 +19,14 @@ def get_infor():
         "port": settings.port,
         "reload": settings.reload,
     }
+
+from services.ollama_client import get_ollama_client
+from pydantic import BaseModel
+
+class OllamaRequest(BaseModel):
+    prompt: str
+
+@app.post("/ollama")
+def ollama_chat(request: OllamaRequest):
+    client = get_ollama_client()
+    return client.chat(request.prompt)
