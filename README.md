@@ -1,0 +1,2 @@
+# Agent-Tool
+用於建置一個基於語言模型框架的agent主控端，採用langGraph以及FastAPI框架運行，預期功能會有大語言模型大腦，支持多輪對話具有對話記憶，能夠進行多輪內省，RAG搜尋工具，基於輕量化的VectorDB的資料儲存系統，執行需要分析功能時能夠調用SubAgent。
